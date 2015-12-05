@@ -1,7 +1,134 @@
-body{
-	background: black;
+html{
+	height: 100%;
 }
-
-p{
-	color: white;
+body{
+	height: 100%;
+	background: url(comppattern2.png) repeat;
+}
+hr{
+	background: linear-gradient(to left, #e7eff3, #1c667a 50%, #e7eff3);
+	height: 4px;
+	border: 0;
+	margin: 0;
+	clear: both;
+}
+/*******HEADER*******/
+.logo{
+	float: left;
+	margin: 15px;
+}
+.text-logo{
+	display: none;
+}
+.address-header{
+	float: right;
+}
+.social{
+	text-decoration: none;
+	margin: 0;
+}
+.social-item{
+	display: inline-block;
+	margin: 15px;
+}
+.page-header{
+	margin-bottom: 20px;
+	background: #eff3f7;
+}
+/****************MAIN*************/
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+/***************SIDEBAR***************/
+.sidebar{
+	width: 250px;
+	float: left;
+}
+.navi-list, .contact-list{
+	list-style-type: none;
+	display: block;
+}
+.navi-list{
+	background: #eff3f7;
+	border-radius: 5px;
+	padding: 0;
+	margin-left: 40px;
+	display: block;
+}
+.navi-item{
+	height: 73px;
+}
+.navi-link{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+}
+.active{
+	background: #3ba8c0;
+}
+.contact-list{
+	padding: 0;
+	margin-left: 40px;
+	display: block;
+	background: #eff3f7;
+}
+.contact-head{
+	padding: 16px 10px;
+	text-decoration: none; 
+}
+.contact-item{
+	height: 40px;
+}
+.contact-link{
+	display: block;
+	padding: 16px; 
+	text-decoration: none;
+}
+/***********CONTENT********************************/
+.content{
+	padding-left: 310px;
+}
+.history-item{
+	list-style-type: none;
+	position: relative;
+}
+.paragraf-img{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: -40px;
+}
+.paragraf-title, .paragraf-date{
+	display: block;
+}
+/***********WRAPPER**FOOTER************************/
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto;
+}
+.wrapper:after{
+	content: " ";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+	background: #eff3f7;
+}
+.page-footer {
+	text-align: center;
+}
+.copyright{
+	position: relative;
+	margin: 25px 100px;
+}
+.login{
+	position: absolute;
+	top: -5px;
+	left: -25px;
 }
