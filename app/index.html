@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/fira.css">
+	<link rel="stylesheet" href="css/proxima.css">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/spriteheet.css">
@@ -26,7 +28,7 @@
 					<li class="social-item fb"> <a href=""></a></li>
 				</ul>
 			</address>
-			<hr>
+			<hr class="line-gradient">
 	</header>
 	<div class="container">
 		<asaide class="sidebar">
@@ -49,26 +51,61 @@
 						Контакты
 					</li>
 					<li class="contact-item">
-						<a href="" class="contact-link">Телефон</a>
+						<a href="" class="contact-link contact-phone">Телефон</a>
 					</li>
 					<li class="contact-item">
-						<a href="" class="contact-link">E-Mail</a>
+						<a href="" class="contact-link contact-mail">E-Mail</a>
 					</li>
 					<li class="contact-item">
-						<a href="" class="contact-link">Skype</a>
+						<a href="" class="contact-link contact-skype">Skype</a>
 					</li>
 				</ul>
 			</address>
 		</asaide>
 		<main class="content">
-			<section class="history">
-				<!-- about -->
-				<h1>
+			<section class="history">				
+				<h1 class="title-history">
 					Основная информация
 				</h1>
+				<div class="about">
+					<div class="photo">
+						<img src="css/myphoto.jpg" alt="" class="myphoto">
+					</div>
+				<ul class="record-list">
+					<li class="record-item">
+						<span class="record-title">Меня зовут</span>
+						<span class="record-value">Савченко Владимир Сергеевич</span>
+					</li>
+					<li class="record-item">
+						<span class="record-title">Мой возраст</span>
+						<span class="record-value">27</span>
+					</li>
+					<li class="record-item">
+						<span class="record-title">Мой город</span>
+						<span class="record-value">Ростов-на-Дону, Россия</span>
+					</li>
+					<li class="record-item">
+						<span class="record-title">Моя специализация</span>
+						<span class="record-value">Frontend разработчик</span>
+					</li>
+					<li class="record-item">
+						<span class="record-title">Ключевые навыки</span>
+					<span class="record-value">
+						<ul class="skill-list">
+							<li class="skill-item">html</li>
+							<li class="skill-item">css</li>
+							<li class="skill-item">javascript</li>
+							<li class="skill-item">gulp</li>
+							<li class="skill-item">git</li>
+							<li class="skill-item">1C</li>
+						</ul>
+					</span>
+					</li>
+				</ul>
+				</div>
 			</section>
 			<section class="history">
-				<h1>
+				<h1 class="title-history">
 					Опыт работы
 				</h1>
 				<ul class="history-list">
@@ -84,7 +121,7 @@
 					<li class="history-item">
 						<div class="work paragraf-img"></div>
 						<span class="paragraf-title">
-							ООО Супер мега системы безопасности интитлед лимитед капитал инкорпорейтед!
+							ООО Супер мега системы безопасности интитлед лимитед капитал инкорпорейтед оф зе грей британ!!!!
 						</span>
 						<span class="paragraf-date">
 							Июнь-Июль
@@ -93,7 +130,7 @@
 				</ul>
 			</section>
 			<section class="history">
-				<h1>
+				<h1 class="title-history">
 					Образование
 				</h1>
 				<ul class="history-list">
@@ -123,7 +160,7 @@
 </div>
 <footer class="page-footer">
 	<div class="container-foot">
-		<hr>
+		<hr class="line-gradient">
 		<div class="copyright">
 		<a href="/login.html" class="login"></a>
 		Пожалуйста не копируйте и не воруте мой сайт
@@ -131,6 +168,7 @@
 	</div>
 </footer>
 <script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/clamp.js/clamp.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

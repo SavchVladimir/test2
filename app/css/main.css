@@ -4,18 +4,25 @@ html{
 body{
 	height: 100%;
 	background: url(comppattern2.png) repeat;
+	font: normal 1em "fira_sanslight" sans-serif;
 }
-hr{
+.line-gradient{
 	background: linear-gradient(to left, #e7eff3, #1c667a 50%, #e7eff3);
 	height: 4px;
 	border: 0;
 	margin: 0;
 	clear: both;
 }
+
+.clear:after{
+	content: " ";
+	display: table;
+	clear: both; 
+}
 /*******HEADER*******/
 .logo{
 	float: left;
-	margin: 15px;
+	margin: 38px 20px;
 }
 .text-logo{
 	display: none;
@@ -25,19 +32,19 @@ hr{
 }
 .social{
 	text-decoration: none;
-	margin: 0;
+	margin: 35px 50px;
 }
 .social-item{
 	display: inline-block;
-	margin: 15px;
+	margin-left: 23px;
 }
 .page-header{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	background: #eff3f7;
 }
 /****************MAIN*************/
 .container{
-	width: 960px;
+	width: 1024px;
 	margin: 0 auto;
 }
 /***************SIDEBAR***************/
@@ -53,11 +60,11 @@ hr{
 	background: #eff3f7;
 	border-radius: 5px;
 	padding: 0;
-	margin-left: 40px;
+	margin: 0 0 0 40px;
 	display: block;
 }
 .navi-item{
-	height: 73px;
+	height: 70px;
 }
 .navi-link{
 	display: block;
@@ -71,11 +78,21 @@ hr{
 	padding: 0;
 	margin-left: 40px;
 	display: block;
-	background: #eff3f7;
 }
 .contact-head{
 	padding: 16px 10px;
 	text-decoration: none; 
+	background: #3ba8c0;
+	color: #ffffff;
+}
+.contact-phone{
+	background: #41b9d4;
+}
+.contact-mail{
+	background: #48cbe8;
+}
+.contact-skype{
+	background: #51daf8;
 }
 .contact-item{
 	height: 40px;
@@ -84,23 +101,91 @@ hr{
 	display: block;
 	padding: 16px; 
 	text-decoration: none;
+	color: #ffffff;
 }
 /***********CONTENT********************************/
 .content{
 	padding-left: 310px;
 }
+/************about*******************/
+.about{
+	overflow:hidden;
+	margin: 0 50px;
+}
+
+.photo{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 5px solid #3ba8c0;
+	overflow: hidden;
+	float: left;
+}
+.myphoto{
+	margin-left: -30px;
+	margin-top: -10px;
+}
+.record-list{
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 370px;
+}
+.skill-list{
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+}
+.skill-item{
+	display: inline-block;
+	padding: 5px 10px;
+	background: #3ba8c0;
+	border-radius: 2px;
+	background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+	margin-bottom: 10px;
+  	height: 19px;
+}
+.record-title{
+	font-weight: bold;
+}
+.record-title:after{
+	content: ": ";
+}
+
+/************history*******************/
+.history{
+	padding-bottom: 20px;
+	margin-bottom: 28px;
+	background: #eff3f7;
+}
+.history-list{
+	margin-left: 20px;
+}
 .history-item{
 	list-style-type: none;
 	position: relative;
+	margin-bottom: 25px;
+}
+.title-history{
+	border-bottom: 2px solid #3ba8c0;
+	display: inline-block;
+	color: #3ba8c0;
+	padding: 20px;
+	margin: 0 0 20px 0;
 }
 .paragraf-img{
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	left: -40px;
+	margin-left: 20px;
 }
 .paragraf-title, .paragraf-date{
 	display: block;
+	margin-left: 20px;
 }
 /***********WRAPPER**FOOTER************************/
 .wrapper{
@@ -131,4 +216,45 @@ hr{
 	position: absolute;
 	top: -5px;
 	left: -25px;
+}
+/********page my work*********/
+.work-list{
+	list-style-type: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.work-img{
+	height: 125px;
+	width: 180px;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
+}
+.work-info{
+	width: 180px;
+	height: 36px;
+	margin: 0 auto;
+	text-align: center;
+}
+.work-ref{
+	width: 180px;
+	height: 36px;
+	margin: 5px auto;
+	text-align: center;
+	text-decoration: none;
+}
+.work-ins, .work-ref, .work-info{
+	display: block;
+}
+.work-item{
+	display: inline-block;
+}
+.last-work-img{
+	height: 129px;
+	width: 184px;
+	border: none;
+}
+.work-container{
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 35px;
 }
