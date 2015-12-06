@@ -41,49 +41,95 @@ body{
 .page-header{
 	margin-bottom: 40px;
 	background: #eff3f7;
+	min-width: 1200px; 
 }
 /****************MAIN*************/
 .container{
-	width: 1024px;
+	width: 1200px;
 	margin: 0 auto;
 }
 /***************SIDEBAR***************/
 .sidebar{
 	width: 250px;
 	float: left;
+	margin-left: 60px;
 }
 .navi-list, .contact-list{
 	list-style-type: none;
 	display: block;
+	font: normal 1em 'fira_sansbook' sans-serif;
 }
 .navi-list{
 	background: #eff3f7;
-	border-radius: 5px;
+	border-radius: 3px;
 	padding: 0;
 	margin: 0 0 0 40px;
 	display: block;
+	font-size: 16pt;
+	width: 250px;
 }
 .navi-item{
 	height: 70px;
+	width: 230px;
+	margin: 0 10px;
+	border-top: 2px solid #3ba8c0;
+}
+.navi-item:first-child{
+	border-top: none;
+	border-radius: 3px 3px 0 0;
+}
+.navi-item-last{
+	border-radius: 0 0 3px 3px;
 }
 .navi-link{
 	display: block;
 	padding: 20px;
 	text-decoration: none;
+	color: #959aa8;
+}
+.navi-link:hover{
+	color: #3ba8c0;
+}
+.active a{
+	color: #ffffff;
+}
+.active:hover a{
+	color: #ffffff;
 }
 .active{
 	background: #3ba8c0;
+	margin: 0;
+	padding: 0 10px;
+	margin-bottom: -2px;
+}
+/********CONTACT*************/
+.contact-head{
+	padding: 8px;
+	text-decoration: none; 
+	background: #3ba8c0;
+	color: #ffffff;
+	height: 29px;
+	width: 234px;
+	border-radius: 3px 3px 0 0;
+}
+.contact-item{
+	height: 40px;
+	width: 250px;
 }
 .contact-list{
 	padding: 0;
 	margin-left: 40px;
 	display: block;
+	height: 40px;
 }
-.contact-head{
-	padding: 16px 10px;
-	text-decoration: none; 
-	background: #3ba8c0;
+.contact-link{
+	display: block;
+	padding: 8px;
+	text-decoration: none;
 	color: #ffffff;
+}
+.contact-link:hover{
+	text-decoration: underline;
 }
 .contact-phone{
 	background: #41b9d4;
@@ -93,19 +139,12 @@ body{
 }
 .contact-skype{
 	background: #51daf8;
-}
-.contact-item{
-	height: 40px;
-}
-.contact-link{
-	display: block;
-	padding: 16px; 
-	text-decoration: none;
-	color: #ffffff;
+	border-radius: 0 0 3px 3px;
 }
 /***********CONTENT********************************/
 .content{
-	padding-left: 310px;
+	float: right;
+	margin-right: 150px;
 }
 /************about*******************/
 .about{
@@ -160,6 +199,8 @@ body{
 	padding-bottom: 20px;
 	margin-bottom: 28px;
 	background: #eff3f7;
+	width: 650px;
+	border-radius: 3px;
 }
 .history-list{
 	margin-left: 20px;
@@ -173,8 +214,9 @@ body{
 	border-bottom: 2px solid #3ba8c0;
 	display: inline-block;
 	color: #3ba8c0;
-	padding: 20px;
+	padding: 10px 30px;
 	margin: 0 0 20px 0;
+	font-size: 21pt;
 }
 .paragraf-img{
 	position: absolute;
@@ -190,23 +232,22 @@ body{
 /***********WRAPPER**FOOTER************************/
 .wrapper{
 	position: relative;
-	min-height: 100%;
-	min-width: 970px;
-	height: auto;
+    min-height: 100%;
+    min-width: 1200px;
+    height: auto;
 }
 .wrapper:after{
 	content: " ";
 	height: 80px;
 	display: block;
+	clear: both;
 }
 .page-footer{
-	min-width: 970px;
 	height: 80px;
 	margin-top: -80px;
 	background: #eff3f7;
-}
-.page-footer {
-	text-align: center;
+	min-width: 1200px;
+	text-align: center; 
 }
 .copyright{
 	position: relative;
@@ -227,11 +268,11 @@ body{
 	height: 125px;
 	width: 180px;
 	border: 2px solid #3ba8c0;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .work-info{
 	width: 180px;
-	height: 36px;
+	height: 45px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -255,6 +296,6 @@ body{
 }
 .work-container{
 	float: left;
-	margin-left: 30px;
+	margin-left: 15px;
 	margin-bottom: 35px;
 }

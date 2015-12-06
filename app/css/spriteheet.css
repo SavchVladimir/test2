@@ -17,14 +17,6 @@
     height: 23px;
     background-position: -41px -5px;
 }
-
-.email {
-    background-image: url(spritesheet.png);
-    width: 21px;
-    height: 16px;
-    background-position: -93px -5px;
-}
-
 .fb {
     background-image: url(spritesheet.png);
     width: 47px;
@@ -74,19 +66,28 @@
     height: 42px;
     background-position: -5px -119px;
 }
-
-.skype {
-    background-image: url(spritesheet.png);
-    width: 20px;
-    height: 20px;
-    background-position: -179px -62px;
-}
-
 .tel {
-    background-image: url(spritesheet.png);
+    background-image: url(spritecontact.png);
     width: 19px;
     height: 21px;
-    background-position: -209px -62px;
+    background-position: -5px -5px;
+    display: inline-block;
+}
+
+.email {
+    background-image: url(spritecontact.png);
+    width: 21px;
+    height: 16px;
+    background-position: -34px -5px;
+    display: inline-block;
+}
+
+.skype {
+    background-image: url(spritecontact.png);
+    width: 20px;
+    height: 20px;
+    background-position: -34px -31px;
+    display: inline-block;
 }
 
 .tw {
