@@ -299,3 +299,47 @@ body{
 	margin-left: 15px;
 	margin-bottom: 35px;
 }
+
+/*/*********************contact*****************/
+.contact-container{
+	width: 400px;
+    margin: 40px auto;
+}
+.contact-name{
+	float: left;
+}
+.mail-text, .name-text{
+	width: 190px;
+    height: 40px;
+}
+.contact-email{
+	float: right;
+}
+.contact-autor{
+	/*margin: 15px;*/
+}
+.contact-message{
+	/*margin: 0 15px;*/
+}
+.message-text{
+	display: block;
+	width: 400px;
+    height: 180px;
+}
+.captcha-box{
+	float: left;
+}
+.captcha-text{
+	float: right;
+	width: 190px;
+    height: 30px;
+}
+.contact-captcha{
+	/*margin: 15px;*/
+}
+.button-send{
+	float: left;
+}
+.button-clear{
+	float: right;
+}
