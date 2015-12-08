@@ -301,7 +301,19 @@ body{
 }
 
 /*/*********************contact*****************/
-.contact-container{
+.contact-title{
+	text-align: center;
+	padding-top: 40px;
+	height: 121px;
+	background-color: #48cbe8;
+	font-size: 19pt;
+	color: #fff;
+}
+.contact-box-after{
+	height: 20px;
+	background-color: #67dffa;
+}
+.contact-box{
 	width: 400px;
     margin: 40px auto;
 }
@@ -316,30 +328,78 @@ body{
 	float: right;
 }
 .contact-autor{
-	/*margin: 15px;*/
+	margin-bottom: 15px;
 }
 .contact-message{
-	/*margin: 0 15px;*/
+	margin-bottom: 15px;
 }
 .message-text{
 	display: block;
-	width: 400px;
+	width: 396px;
     height: 180px;
+ }
+.input-text{
+    font-size: 13px;
+    border-radius: 2px 3px;
+    border: 2px solid #48cbe8;
+    background-color: #fbfcfd;
+    vertical-align: top;
+    resize: none;
+}
+.contact-captcha{
+	margin-bottom: 15px;
 }
 .captcha-box{
 	float: left;
+}
+.captcha{
+	background-color: #fff;
+	border: 2px solid #48cbe8;
+	border-radius: 2px;
+	padding-top: 5px;
 }
 .captcha-text{
 	float: right;
 	width: 190px;
     height: 30px;
 }
-.contact-captcha{
-	/*margin: 15px;*/
+.input-title{
+	color: #959aa8;
+    font-size: 19px;
+}
+.contact-button{
+	margin-bottom: 15px;
 }
 .button-send{
 	float: left;
+	background-color: #48cbe8;
+	border-bottom-color: #3ba8c0;
+}
+.button-send:hover{
+	border-bottom-color:#48cbe8;
+	padding-top: 2px;
 }
 .button-clear{
 	float: right;
+	background-color: #849db5;
+	border-bottom-color: #687b8f;
 }
+.button-clear:hover{
+	border-bottom-color:#849db5;
+	padding-top: 2px;
+}
+.button{
+	width: 138px;
+	height: 33px;
+	color: #fff;
+	font-size: 13pt;
+	border-style: none;
+	border-radius: 5px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+.input-text:focus::-webkit-input-placeholder {color: transparent}
+.input-text:focus::-moz-placeholder          {color: transparent}
+.input-text:focus:-moz-placeholder           {color: transparent}
+.input-text:focus:-ms-input-placeholder      {color: transparent}

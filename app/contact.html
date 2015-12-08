@@ -3,9 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!--  -->
 	<link rel="stylesheet" href="css/fira.css">
 	<link rel="stylesheet" href="css/proxima.css">
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/spriteheet.css">
 </head>
@@ -15,6 +19,7 @@
 	<header class="page-header">
 			<div class="logo">
 				<a href="loftschool.com">
+					<img src="img/logo.png" height="42" width="243" alt="Сайт портфолио">
 					<span class="text-logo">
 						Сайт портфолио
 					</span>
@@ -22,10 +27,10 @@
 			</div>
 			<address class="address-header">
 				<ul class = "social">
-					<li class="social-item vk"> <a href="https://vk.com/yzbest"></a></li>
-					<li class="social-item tw"> <a href=""></a></li>
-					<li class="social-item git"> <a href="https://github.com/SavchVladimir"></a></li>
-					<li class="social-item fb"> <a href=""></a></li>
+					<li class="social-item vk"> <a href="https://vk.com/yzbest" alt="vk.com"></a></li>
+					<li class="social-item tw"> <a href="" alt="vk.com"></a></li>
+					<li class="social-item git"> <a href="https://github.com/SavchVladimir" alt="github.com"></a></li>
+					<li class="social-item fb"> <a href="" alt=""></a></li>
 				</ul>
 			</address>
 			<hr class="line-gradient">
@@ -75,45 +80,47 @@
 		<main class="content">
 			<section class="history">				
 				<div class="contact-container">
+					<div class="contact-title">
+						У вас есть интересный проект? Напишите мне!
+					</div>
+					<div class="contact-box-after">
+					</div>
 					<div class="contact-box">
-						<div class="contact-title">
-							У вас есть интересный проект? Напишите мне!
-						</div>
 						<div class="contact-chat">
 							<div class="contact-autor clear">
 								<div class="contact-name">
 									<div class="input-title">
 										Имя
 									</div>
-									<input type="text" class="name-text">
+									<textarea type="text" class="name-text input-text" placeholder="Как к Вам обращаться"></textarea>
 								</div>
 								<div class="contact-email">
 									<div class="input-title">
 										Email
 									</div>
-									<input type="text" class="mail-text">
+									<textarea type="text" class="mail-text input-text" placeholder="Куда мне писать"></textarea>
 								</div>
 							</div>
 							<div class="contact-message">
 								<div class="input-title">
 									Сообщение
 								</div>
-								<input type="text" class="message-text">
+								<textarea type="text" class="message-text input-text" placeholder="Суть проекта"></textarea>
 							</div>
 							<div class="contact-captcha clear">
 								<div class="input-title">
 									Введите код, указанный на картинке
 								</div>
 								<div class="captcha-box">
-									<img src="img/logo.png" height="42" width="180" alt="" class="captcha">
+									<img src="css/captcha.png" height="46" width="146" alt="" class="captcha">
 								</div>
-								<input type="text" class="captcha-text">
+								<textarea type="text" class="captcha-text input-text" placeholder="Введите код"></textarea>
 							</div>
-							<div class="contact-buttons">
-								<button class="button-send">
+							<div class="contact-buttons clear">
+								<button class="button-send button">
 									Отправить
 								</button>
-								<button class="button-clear">
+								<button class="button-clear button">
 									Очистить
 								</button>
 							</div>
@@ -131,7 +138,7 @@
 		<hr class="line-gradient">
 		<div class="copyright">
 		<a href="/login.html" class="login"></a>
-		Пожалуйста не копируйте и не ворйуте мой сайт
+		Пожалуйста не копируйте и не воруйте мой сайт
 		</div>
 	</div>
 </footer>
