@@ -27,10 +27,10 @@
 			</div>
 			<address class="address-header">
 				<ul class = "social">
-					<li class="social-item vk"> <a href="https://vk.com/yzbest"></a></li>
-					<li class="social-item tw"> <a href=""></a></li>
-					<li class="social-item git"> <a href="https://github.com/SavchVladimir"></a></li>
-					<li class="social-item fb"> <a href=""></a></li>
+					<li class="social-item vk"> <a class="social-link" href="https://vk.com/yzbest" alt="vk.com"></a></li>
+					<li class="social-item tw"> <a class="social-link" href="" alt="vk.com"></a></li>
+					<li class="social-item git"> <a class="social-link" href="https://github.com/SavchVladimir" alt="github.com"></a></li>
+					<li class="social-item fb"> <a class="social-link" href="" alt=""></a></li>
 				</ul>
 			</address>
 			<hr class="line-gradient">
@@ -84,9 +84,14 @@
 				<ul class="work-list">
 					<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="img/1.jpg" height="125" width="180" class="work-img" alt="">
-							</a>
+								<div class="work-pre">
+									<a href="" class="work-pre-link">
+										Подробнее
+									</a>
+								</div>
+							</div>
 							<a href="" class="work-ref">
 								www.site.ru
 							</a>
@@ -95,9 +100,9 @@
 					</li>
 					<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="img/2.jpg" alt="" class="work-img">
-							</a>
+							</div>
 							<a href="" class="work-ref">
 									www.site.ru
 							</a>
@@ -106,9 +111,9 @@
 					</li>
 					<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="img/3.jpg" alt="" class="work-img">
-							</a>
+							</div>
 							<a href="" class="work-ref">
 									www.site.ru
 							</a>
@@ -117,9 +122,9 @@
 					</li>
 						<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="img/4.jpg" alt="" class="work-img">
-							</a>
+							</div>
 							<a href="" class="work-ref">
 									www.site.ru
 							</a>
@@ -128,9 +133,9 @@
 					</li>
 						<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="img/5.jpg" alt="" class="work-img">
-							</a>
+							</div>
 							<a href="" class="work-ref">
 									www.site.ru
 							</a>
@@ -139,9 +144,9 @@
 					</li>
 					<li class="work-item">
 						<div class="work-container">
-							<a href="" class="work-ins">
+							<div class="work-ins">
 								<img src="css/add-new.png" alt="" class="work-img last-work-img">
-							</a>
+							</div>
 							<a href="" class="work-ref">
 									
 							</a>
@@ -149,6 +154,56 @@
 						</div>
 					</li>				
 				</ul>
+			</section>
+			<section class="history project-popup">				
+				<div class="contact-container">
+				<div class="project-title-container">
+					<div class="project-title">
+						Добавление проекта
+					</div>
+					<button type = "button" class="close-project"></button>
+				</div>
+					<div class="project-title-after">
+					</div>	
+					<div class="project-popup-box">
+						<div class="contact-chat">
+								<div class="input-box">
+									<div class="input-project-title">
+										Название проекта
+									</div>
+									<textarea class="input-project" placeholder="Введите название"></textarea>
+								</div>
+								<div class="input-box">
+									<div class="input-project-title">
+										Картинка проекта
+									</div>
+									<div class="load-img-box">
+									<textarea class="input-project input-project-load" placeholder="Загрузите изображение"></textarea>
+									<button class="load-button">
+										<img src="css/button-load-img.png" height="29" width="39" alt="" class="load-img">
+									</button>
+									</div>
+								</div>
+							<div class="input-box">
+								<div class="input-project-title">
+									URL проекта
+								</div>
+								<textarea class="input-project" placeholder="Добавьте ссылку"></textarea>
+							</div>
+							<div class="input-box">
+								<div class="input-project-title">
+									Описание
+								</div>
+								<textarea class="input-project input-project-content" placeholder="Пара слов о Вашем проекте"></textarea>
+							</div>
+							<div class="button-box-project">
+							<button class="button-add button">
+									Добавить
+							</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 	</div>
