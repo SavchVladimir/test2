@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SavchVladimir/test2/issues"
   },
-  "homepage": "https://github.com/SavchVladimir/test2#readme"
+  "homepage": "https://github.com/SavchVladimir/test2#readme",
+  "devDependencies": {
+    "gulp-connect-php": "0.0.7"
+  }
 }

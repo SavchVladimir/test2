@@ -300,6 +300,12 @@ body{
 	width: 184px;
 	border: none;
 }
+.add-new-link{
+    top: -90px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .work-container{
 	float: left;
 	margin-left: 15px;
@@ -423,9 +429,14 @@ body{
 .input-text:focus:-moz-placeholder           {color: transparent}
 .input-text:focus:-ms-input-placeholder      {color: transparent}
 
+#new-project-popup{
+	display: none;
+}
 .project-popup{
 	width: 430px;
 	padding-bottom: 10px;
+	background: #eff3f7;
+    border-radius: 3px;
 }
 .project-popup-box{
 	margin: 8px 25px;
@@ -469,16 +480,24 @@ body{
 	color: #959aa8;
     font-size: 22px;
 }
+#project-img{
+	cursor: pointer;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 13px;
+	padding-left: 10px;
+	}    
 .input-project{
 	width: 375px;
 	height: 48px;
 	display: block;
-    color: #959aa8;
+    
     font-size: 22px;
 	padding: 0;
     font-size: 13px;
     border-radius: 5px;
     border: 1px solid #48cbe8;
+    color: #959aa8;
     background-color: #fbfcfd;
     resize: none;
 }
@@ -500,26 +519,88 @@ body{
 .button-box-project{
 	text-align: center;
 }
-.load-img-box{
+/*.load-img-box{
 	position: relative;
-}
+}*/
 .load-img{
 	padding-top: 5px;
 }
-.load-button{
+/*.load-button{
+	cursor: pointer;
 	height: 49px;
 	width: 60px;
 	top: 0;
 	right: 4px;
+	position: absolute;
 	padding: 0;
 	border-radius: 0 5px 5px 0;
-	position: absolute;
 	border-style: none;
 	background-color: #48cbe8;
 	background-repeat: no-repeat;
+}*/
+
+.fileform { 
+    cursor: pointer;
+    overflow: hidden;
+    padding: 13px 10px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #48cbe8;    
+	color: #959aa8;
+    background-color: #fbfcfd;
+    width: 375px;
+	height: 48px;
+	box-sizing: border-box;
+}
+ 
+.fileform .selectbutton { 
+    padding: 0;
+	color: #959aa8;
+    float: right;
+    font-size: 16px;
+   	position: absolute;
+   	top: 0;
+    right: 0;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    border-style: none;
+	background-color: #48cbe8;
+	background-repeat: no-repeat;
+    height: 49px;
+	width: 60px;
+}
+ 
+.fileform #upload{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 30px; 
+    z-index:20;
 }
 
 .input-project::-webkit-input-placeholder {padding: 13px}
 .input-project::-moz-placeholder          {padding: 13px}
 .input-project:-moz-placeholder           {padding: 13px}
 .input-project:-ms-input-placeholder      {padding: 13px}
+
+.server-mes{
+	display: none;
+}
+.captcha-wrapper{
+	text-align: center;
+}
+.box-captcha{
+	
+	margin-bottom: 20px;
+	display: inline-block;
+}

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/fira.css">
 	<link rel="stylesheet" href="css/proxima.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -145,66 +146,87 @@
 					<li class="work-item">
 						<div class="work-container">
 							<div class="work-ins">
+								<a id="add-new-item" href="" class="add-new-link">
 								<img src="css/add-new.png" alt="" class="work-img last-work-img">
+								</a>
 							</div>
-							<a href="" class="work-ref">
-									
-							</a>
-							<span class="work-info"></span>
 						</div>
 					</li>				
 				</ul>
 			</section>
-			<section class="history project-popup">				
-				<div class="contact-container">
-				<div class="project-title-container">
-					<div class="project-title">
-						Добавление проекта
+			<div id="new-project-popup">				
+				<div class="project-popup">
+					<form id="add-new-project" name="load project" role="form" class="form">
+					<div class="server-mes error-mes"></div>
+					<div class="server-mes success-mes"></div>
+					<div class="project-title-container">
+						<div class="project-title">
+							Добавление проекта
+						</div>
+						<button type = "button" class="close-project b-close"></button>
 					</div>
-					<button type = "button" class="close-project"></button>
-				</div>
-					<div class="project-title-after">
-					</div>	
-					<div class="project-popup-box">
-						<div class="contact-chat">
+						<div class="project-title-after">
+						</div>	
+						<div class="project-popup-box">
+							<div class="contact-chat">
+									<div class="input-box">
+										<label for="project-name" class="input-project-title">
+										<!-- <div class="input-project-title"> -->
+											Название проекта
+										<!-- </div> -->
+										<textarea id = "project-name" class="input-project" placeholder="Введите название" name="project-name"></textarea>
+									</label>
+									</div>
+									<div class="input-box">
+									<label for="project-img" class="input-project-title">
+										<!-- <div class="input-project-title"> -->
+											Картинка проекта
+										<!-- </div> -->
+										<!-- <div class="load-img-box">
+										<input id = "project-img" name = "project-img" class="input-project input-project-load" placeholder="Загрузите изображение"></input>
+										<! <div id = "project-img" name = "project-img" class="input-project input-project-load">Загрузите изображение></div> -->
+										<!-- <button class="load-button">
+											<img src="css/button-load-img.png" height="29" width="39" alt="" class="load-img">
+										</button>
+										<span class="load-button">
+											<img src="css/button-load-img.png" height="29" width="39" alt="" class="load-img">
+										</span>
+										</div>  -->
+
+										<div class="fileform clear">
+										<div class="selectbutton">
+											<img src="css/button-load-img.png" height="29" width="39" alt="" class="load-img">
+										</div>
+										<input id="upload" type="file" name="upload">Загрузите изображение </input>
+										</div>
+										</label>
+									</div>
 								<div class="input-box">
-									<div class="input-project-title">
-										Название проекта
-									</div>
-									<textarea class="input-project" placeholder="Введите название"></textarea>
+								<label for="project-url" class="input-project-title">
+									<!-- <div class="input-project-title"> -->
+										URL проекта
+									<!-- </div> -->
+									<textarea id = "project-url" name = "project-url" class="input-project" placeholder="Добавьте ссылку"></textarea>
+									</label>
 								</div>
 								<div class="input-box">
-									<div class="input-project-title">
-										Картинка проекта
-									</div>
-									<div class="load-img-box">
-									<textarea class="input-project input-project-load" placeholder="Загрузите изображение"></textarea>
-									<button class="load-button">
-										<img src="css/button-load-img.png" height="29" width="39" alt="" class="load-img">
-									</button>
-									</div>
+								<label for="project-content" class="input-project-title">
+									<!-- <div class="input-project-title"> -->
+										Описание
+									<!-- </div> -->
+									<textarea id = "project-content" name = "project-content" class="input-project input-project-content" placeholder="Пара слов о Вашем проекте"></textarea>
+									</label>
 								</div>
-							<div class="input-box">
-								<div class="input-project-title">
-									URL проекта
+								<div class="button-box-project">
+								<button type="submit" class="button-add button">
+										Добавить
+								</button>
 								</div>
-								<textarea class="input-project" placeholder="Добавьте ссылку"></textarea>
-							</div>
-							<div class="input-box">
-								<div class="input-project-title">
-									Описание
-								</div>
-								<textarea class="input-project input-project-content" placeholder="Пара слов о Вашем проекте"></textarea>
-							</div>
-							<div class="button-box-project">
-							<button class="button-add button">
-									Добавить
-							</button>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-			</section>
+			</div>
 		</main>
 	</div>
 	</div>
@@ -219,7 +241,10 @@
 	</div>
 </footer>
 <script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/bPopup/jquery.bpopup.js"></script>
 <script src="bower/clamp.js/clamp.js"></script>
 <script src="js/main.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="js/add-project.js"></script>
 </body>
 </html>

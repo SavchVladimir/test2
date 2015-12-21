@@ -14,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bPopup": "bpopup#~0.11.0",
+    "qtip2": "~2.2.1"
+  }
 }

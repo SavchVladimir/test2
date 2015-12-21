@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	console.log("Hello word!");
+	// console.log("Hello word!");
 });
 
 var module = document.getElementById("transform");

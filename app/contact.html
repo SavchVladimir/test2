@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -12,6 +13,7 @@
 	<link rel="stylesheet" href="css/proxima.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/spriteheet.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="wrapper">
@@ -77,6 +79,7 @@
 				</ul>
 			</address>
 		</asaide>
+		<form id="send-message" name="send message" role="form" class="form">
 		<main class="content">
 			<section class="history">				
 				<div class="contact-container">
@@ -92,35 +95,41 @@
 									<div class="input-title">
 										Имя
 									</div>
-									<textarea type="text" class="name-text input-text" placeholder="Как к Вам обращаться"></textarea>
+									<textarea id = "feedback-name" name = "feedback-name" class="name-text input-text" placeholder="Как к Вам обращаться"></textarea>
 								</div>
 								<div class="contact-email">
 									<div class="input-title">
 										Email
 									</div>
-									<textarea type="text" class="mail-text input-text" placeholder="Куда мне писать"></textarea>
+									<textarea id = "feedback-email" name = "feedback-email" class="mail-text input-text" placeholder="Куда мне писать"></textarea>
 								</div>
 							</div>
 							<div class="contact-message">
 								<div class="input-title">
 									Сообщение
 								</div>
-								<textarea type="text" class="message-text input-text" placeholder="Суть проекта"></textarea>
+								<textarea id = "feedback-message" name = "feedback-message" class="message-text input-text" placeholder="Суть проекта"></textarea>
 							</div>
-							<div class="contact-captcha clear">
+							<div class="captcha-wrapper clear">
+							<div class="box-captcha">
+							<div class="g-recaptcha" data-sitekey="6LfmehMTAAAAAAdTiMsriWgfKj06g-afebyZhTf2">
+								
+							</div>
+							</div>
+							<!-- <div class="contact-captcha clear">
 								<div class="input-title">
 									Введите код, указанный на картинке
 								</div>
 								<div class="captcha-box">
 									<img src="css/captcha.png" height="46" width="146" alt="" class="captcha">
 								</div>
-								<textarea type="text" class="captcha-text input-text" placeholder="Введите код"></textarea>
-							</div>
+								<textarea id = "feedback-captcha" name = "feedback-captcha" class="captcha-text input-text" placeholder="Введите код"></textarea>
+							</div> -->
 							<div class="contact-buttons clear">
-								<button class="button-send button">
+								<button type="submit" id="button-send" class="button-send button">
 									Отправить
 								</button>
-								<button class="button-clear button">
+								<button type="reset" id="button-clear" class="button-clear button">
 									Очистить
 								</button>
 							</div>
@@ -129,6 +138,7 @@
 				</div>
 			</section>
 		</main>
+		</form>
 	</div>
 	</div>
 	</div>
@@ -145,5 +155,7 @@
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/clamp.js/clamp.js"></script>
 <script src="js/main.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="js/send-mes.js"></script>
 </body>
 </html>
