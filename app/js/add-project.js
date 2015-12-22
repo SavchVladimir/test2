@@ -8,36 +8,34 @@ var myModule = (function(){
 	//прослушивание событий
 	function _setUpListners(){
 			$('#add-new-item').on('click',_showModal);
-			$('#upload').on('change',_loadImg);
+			$('#project-image').on('change',_loadImg);
 		};
 
-	function _loadImg(e){
-			// var filePath = e.target.value.split('\\'),
-   //          	fileName = filePath[filePath.length-1];
-   //      	$('#project-img').val(fileName);
-   console.log(this);
-   			name = _getName(this.value);
-   			$('#upload')
-			.val(name)
-			.trigger('hideTooltip') // отключение тултипа
-			.removeClass('has-error'); // убираем класс с ошибкой
-			
+	function _loadImg(){
+			var sliceReg =  _getName(this.value);
+			$('#fake-input').text(sliceReg);
+			$('#fake-input').qtip('destroy', true);
 		};
 
 	var _getName = function(str){
 		    return str.replace(/\\/g, '/').replace(/.*\//, '');
 		};
+
 	//работа с модальным окном
 	function _showModal(ev){
 			ev.preventDefault(); //отменяем действие по дефолту
-			
 			var divPopup = $('#new-project-popup'),
 				form = divPopup.find('.form');
 
 			divPopup.bPopup({
 				onClose: function(){
-					//при закрытии удаляем все qtip
+					//при закрытии удаляем все qtip и значения
 					$('.qtip').remove();
+					$('#fake-input').text("Загрузите изображение");
+					$('#project-name').val("");
+					$('#project-image').val("");
+					$('#project-content').val("");
+					$('#project-url').val("");
 				}
 			});
 			//ждем нажание на добавление проекта
@@ -47,17 +45,18 @@ var myModule = (function(){
 	//добавление проекта
 	function _addProject(ev){
 			ev.preventDefault();
+			$('.qtip').remove();
 			var form = $(this),
 				url = 'add-project.php',
 				resultAjaxForm = _ajaxForm(form,url);
 				
 			resultAjaxForm.done(function(ans){
-				console.log(ans);
 				if(!ans.name_status){
 					_createQtip($('#project-name'), false, ans.name_text);
 				};
-				if(!ans.img_status){
-					_createQtip($('#upload'), false, ans.img_text);
+				// if(!ans.img_status){
+				if($('#project-image').val() === "") {
+					_createQtip($('#fake-input'), false, "Выберите изображение");
 				};
 				if(!ans.url_status){
 					_createQtip($('#project-url'), false, ans.url_text);

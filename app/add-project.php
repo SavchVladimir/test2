@@ -1,8 +1,6 @@
 <?php
 
 $name 	 = $_POST['project-name'];
-$img 	 = $_POST['upload'];
-
 $url     = $_POST['project-url'];
 $content = $_POST['project-content'];
 
@@ -16,27 +14,6 @@ if($name === ''){
 	$data['name_text'] = '';
 	$data['name_status'] = true;
 }
-// ///IMG////////////////////////////////
-if(strlen($img)){
-	 $imgtypes = array(".png",".jpeg",".jpg");
-	 $imgtype = strrchr($img,".");
-	 $imgtype = in_array($imgtype, $imgtypes);
-}else{
-	$imgtype = false;
-};
-
-if($img === ''){
-	$data['img_text'] = 'Не выбрано изображение';
-	$data['img_status'] = false;
-	$data['img_object'] = $img;
-}elseif(!$imgtype){
-	$data['img_text'] = 'Не верный формат изображения';
-	$data['img_status'] = false;
-	$data['img_object'] = $img;
-}else{
-	$data['img_text'] = '';
-	$data['img_status'] = true;
-};
 ///URL////////////////////////////////
 if(strlen($url)){
 	$urltypes = array(".ru",".com",".ua",".kz",".by",".ge");
